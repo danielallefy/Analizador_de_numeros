@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Números</title>
+   <style>
+       body {
+    background:black;
+    font: normal 15pt Arial;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('matematica.png');
+}
+
+header { 
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500 px;
+    margin: auto;
+    box-shadow: 3px 3px 10 px black;
+}
+
+select#flista{
+    background-color:rgba(202, 188, 188, 0.5);
+    color: black;
+    width: 150px;
+    border: none;
+    transition: .3s ease all;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: italic;
+}
+.botao{
+    background-color:rgba(0, 0, 0, 0.644);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-top: 10px;
+
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.barra{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-top: 10px;
+    
+    
+}
+
+
+
+   </style>
+</head>
+<body>
+    <header>
+        <h1>Analizador de Números</h1>
+    </header>
+    <section>
+        <div>
+            Número (entre 1 e 100):
+            <input class="barra" type="number" name="fnum" id="fnum">
+            <input class="botao" type="button" value="Adicionar" onclick="adicionar()">
+            <br><br><select name="flista" id="flista" size = "6"></select>
+            <br><input class="botao" type="button" value="Finalizar" onclick="finalizar()">
+        </div>
+        <div id = "res"> 
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Daniel_Allefy &copy;</p>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
